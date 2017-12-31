@@ -154,6 +154,12 @@ class PlayMatchViewController: UIViewController {
                         PlayMatchViewController.matchEndedDecider = true
                         self.toStatisticsButton.isHidden = false
                         self.previousButton.isHidden = true
+                        self.StepOneWinners.isHidden = true
+                        self.StepOneErrors.isHidden = true
+                        self.StepOneStrokes.isHidden = true
+                        self.StepTwoWinners.isHidden = true
+                        self.StepTwoErrors.isHidden = true
+                        self.StepTwoStrokes.isHidden = true
                         
                         PlayMatchViewController.player1Won = true
                         PlayMatchViewController.player2Won = false
@@ -247,6 +253,12 @@ class PlayMatchViewController: UIViewController {
                         PlayMatchViewController.matchEndedDecider = true
                         self.toStatisticsButton.isHidden = false
                         self.previousButton.isHidden = true
+                        self.StepOneWinners.isHidden = true
+                        self.StepOneErrors.isHidden = true
+                        self.StepOneStrokes.isHidden = true
+                        self.StepTwoWinners.isHidden = true
+                        self.StepTwoErrors.isHidden = true
+                        self.StepTwoStrokes.isHidden = true
                         
                         PlayMatchViewController.player1Won = false
                         PlayMatchViewController.player2Won = true
@@ -340,6 +352,12 @@ class PlayMatchViewController: UIViewController {
                         PlayMatchViewController.matchEndedDecider = true
                         self.toStatisticsButton.isHidden = false
                         self.previousButton.isHidden = true
+                        self.StepOneWinners.isHidden = true
+                        self.StepOneErrors.isHidden = true
+                        self.StepOneStrokes.isHidden = true
+                        self.StepTwoWinners.isHidden = true
+                        self.StepTwoErrors.isHidden = true
+                        self.StepTwoStrokes.isHidden = true
                         
                         PlayMatchViewController.player1Won = false
                         PlayMatchViewController.player2Won = true
@@ -433,6 +451,12 @@ class PlayMatchViewController: UIViewController {
                         PlayMatchViewController.matchEndedDecider = true
                         self.toStatisticsButton.isHidden = false
                         self.previousButton.isHidden = true
+                        self.StepOneWinners.isHidden = true
+                        self.StepOneErrors.isHidden = true
+                        self.StepOneStrokes.isHidden = true
+                        self.StepTwoWinners.isHidden = true
+                        self.StepTwoErrors.isHidden = true
+                        self.StepTwoStrokes.isHidden = true
 
                         PlayMatchViewController.player1Won = true
                         PlayMatchViewController.player2Won = false
@@ -526,6 +550,12 @@ class PlayMatchViewController: UIViewController {
                         PlayMatchViewController.matchEndedDecider = true
                         self.toStatisticsButton.isHidden = false
                         self.previousButton.isHidden = true
+                        self.StepOneWinners.isHidden = true
+                        self.StepOneErrors.isHidden = true
+                        self.StepOneStrokes.isHidden = true
+                        self.StepTwoWinners.isHidden = true
+                        self.StepTwoErrors.isHidden = true
+                        self.StepTwoStrokes.isHidden = true
 
                         PlayMatchViewController.player1Won = true
                         PlayMatchViewController.player2Won = false
@@ -619,6 +649,12 @@ class PlayMatchViewController: UIViewController {
                         PlayMatchViewController.matchEndedDecider = true
                         self.toStatisticsButton.isHidden = false
                         self.previousButton.isHidden = true
+                        self.StepOneWinners.isHidden = true
+                        self.StepOneErrors.isHidden = true
+                        self.StepOneStrokes.isHidden = true
+                        self.StepTwoWinners.isHidden = true
+                        self.StepTwoErrors.isHidden = true
+                        self.StepTwoStrokes.isHidden = true
 
                         PlayMatchViewController.player1Won = false
                         PlayMatchViewController.player2Won = true
@@ -702,6 +738,12 @@ class PlayMatchViewController: UIViewController {
             endMatchPostBottom.text = "Now view your stats!"
             toStatisticsButton.isHidden = false
             previousButton.isHidden = true
+            self.StepOneWinners.isHidden = true
+            self.StepOneErrors.isHidden = true
+            self.StepOneStrokes.isHidden = true
+            self.StepTwoWinners.isHidden = true
+            self.StepTwoErrors.isHidden = true
+            self.StepTwoStrokes.isHidden = true
         } else {
             endMatchPostTop.text = ""
             endMatchPostBottom.text = ""
@@ -726,6 +768,13 @@ class PlayMatchViewController: UIViewController {
         StepTwoErrors.value = Double(PlayMatchViewController.player2CurrentErrors)
         StepOneStrokes.value = Double(PlayMatchViewController.currentStrokesToPlayer1)
         StepTwoStrokes.value = Double(PlayMatchViewController.currentStrokesToPlayer2)
+        
+        StepOneWinners.autorepeat = false
+        StepTwoWinners.autorepeat = false
+        StepOneErrors.autorepeat = false
+        StepTwoErrors.autorepeat = false
+        StepOneStrokes.autorepeat = false
+        StepTwoStrokes.autorepeat = false
         
         PreMatch.playMatchHasBeenVisited = true
     }
