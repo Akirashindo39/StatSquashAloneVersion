@@ -113,22 +113,22 @@ class PreMatch: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBAction func enterPlayer1Name(_ sender: UITextField)
     {
-        PreMatch.player1Name = player1NameField.text
+        PreMatch.player1Name = (player1NameField.text)?.trimmingCharacters(in: .whitespacesAndNewlines)
     }
     
     @IBAction func enterPlayer1TeamName(_ sender: UITextField)
     {
-        PreMatch.player1TeamName = player1TeamNameField.text
+        PreMatch.player1TeamName = (player1TeamNameField.text)?.trimmingCharacters(in: .whitespacesAndNewlines)
     }
     
     @IBAction func enterPlayer2Name(_ sender: UITextField)
     {
-        PreMatch.player2Name = player2NameField.text
+        PreMatch.player2Name = (player2NameField.text)?.trimmingCharacters(in: .whitespacesAndNewlines)
     }
     
     @IBAction func enterPlayer2TeamName(_ sender: UITextField)
     {
-        PreMatch.player2TeamName = player2TeamNameField.text
+        PreMatch.player2TeamName = (player2TeamNameField.text)?.trimmingCharacters(in: .whitespacesAndNewlines)
     }
     
     @IBAction func continuePressed(_ sender: UIButton) {
